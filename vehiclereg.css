@@ -1,0 +1,25 @@
+.box{
+    margin-top: 40px;
+    height:250px;
+    width:500px !important;
+    background-color: aliceblue;
+    border:5px solid grey !important; 
+}
+.setheader{
+    text-align: center;
+    margin:10px 10px;
+}
+.setfont{
+    color:darkslategrey;
+    font-weight:bold;
+    border-radius: 5px;
+}
+.setborder{
+    border-radius: 10px;
+  
+    font-size:15px;
+    padding:5px; 
+    color:royalblue;
+    font-weight: bold; 
+    }
+ 

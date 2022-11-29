@@ -16,20 +16,36 @@ if (regex_pattern.test(prevRegNumber)) {
      nextRegNumbers=nextRegNumber.toString();    //converting integer into  string
                                            //console.log(nextRegNumbers.length);
      if (nextRegNumbers.length==1){                                                   //Applying condition for reg number less than or equal to 4
-        document.getElementById("output").innerHTML=str1+str2+"0"+"0"+"0"+nextRegNumber;
+        document.getElementById("output").innerHTML="Next Registration number is "+str1+str2+"0"+"0"+"0"+nextRegNumber;
     }
     if (nextRegNumbers.length==2){
-        document.getElementById("output").innerHTML=str1+str2+"0"+"0"+nextRegNumber;
+        document.getElementById("output").innerHTML="Next Registration number is "+str1+str2+"0"+"0"+nextRegNumber;
     }
     if (nextRegNumbers.length==3){
-        document.getElementById("output").innerHTML=str1+str2+"0"+nextRegNumber;
+        document.getElementById("output").innerHTML="Next Registration number is "+str1+str2+"0"+nextRegNumber;
     }
                                   
 if (nextRegNumbers.length==4){
-    document.getElementById("output").innerHTML=str1+str2+nextRegNumber;      
+    document.getElementById("output").innerHTML="Next Registration number is "+str1+str2+nextRegNumber;      
 }                                                                               //end of less or equal to 4
-else if(nextRegNumbers.length>4){                                        //for values greater than 4 or 9999
+else if(nextRegNumbers.length>4){                                        //for values greater than 4 or >9999
+var str2first=str2.slice(0,1);
+var str2second=str2.slice(-1);
+console.log(str2first);
+console.log(str2second); 
+if(str2second=='Z'){
+    console.log("It is equal to z");
+    var newsecond=str2first.charCodeAt(0)+1;
+    var newstringtwo=String.fromCharCode(newsecond);  
     
+    document.getElementById("output").innerHTML="Next Registration number is "+str1+newstringtwo+'A'+'0001';   
+}
+else{
+    console.log("It is not equal to z");
+    var newsecond=str2second.charCodeAt(0)+1;
+    var newstringtwo=String.fromCharCode(newsecond); 
+    document.getElementById("output").innerHTML="Next Registration number is "+str1+str2first+newstringtwo+'0001';  
+}
 }
 }                                     //end of regex pattern validating input
 else {
