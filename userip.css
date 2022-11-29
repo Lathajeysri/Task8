@@ -1,0 +1,11 @@
+.setcenter{
+    text-align: center;
+    margin:20px;
+}
+.setfont{
+    color:darkslategrey;
+    font-weight:bold;
+}
+.setpara{
+    font-size: 40px;
+}

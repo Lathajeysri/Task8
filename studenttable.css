@@ -1,0 +1,17 @@
+
+.setbackground{
+    background-color:aliceblue;
+    }
+    .setborder{
+        border-radius: 10px;
+      
+        font-size: 20px;
+        padding:10px; 
+        color:blue;
+        font-weight: bold; 
+        
+    }
+    .setfont{
+        color:darkslategrey;
+        font-weight: bold;
+    }

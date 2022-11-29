@@ -1,0 +1,14 @@
+.box{
+    margin-top: 40px;
+    height:250px;
+    width:500px !important;
+    background-color: aliceblue;
+}
+.setheader{
+    text-align: center;
+    margin:10px 10px;
+}
+.setfont{
+    color:darkslategrey;
+    font-weight:bold;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>  CheckIn/CheckOut</title>
+        <link rel="stylesheet" href="checkinout.css"></link>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <script src="checkinout.js"></script>
+    </head>
+    <body>
+        <div class="container border box">
+            
+            <h3 class="setheader" >CheckIn/CheckOut</h3>
+        <div class="form setfont">
+      
+        <label for="checkIn">Enter the Check in date</label><br>
+        <input type="date" name="checkIn" placeholder="checkIn"    onchange="checkInDate(this.value)" id="checkIn" /><br><br>
+
+        <label for="checkOut">Enter the Check in date</label><br>
+        <input type="date" name="checkOut" placeholder="" disabled id="checkOut"  onchange="checkInDate(this.value)" /><br><br>
+        <p id="output"></p>
+
+ 
+
+</div>
+</div>
+
+</body>
+</html>

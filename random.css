@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin:0;
+}
+
+.setbutton{
+    font-family: sans-serif;
+    font-size: 20px;
+    padding: 15px 40px;
+    background-color: transparent;
+    border:5px solid rebeccapurple;
+    color:rebeccapurple;
+border-radius:50px;
+}
+
+.setpara{
+    font-family: sans-serif;
+    font-size: 20px;   
+    color:rebeccapurple;
+}
+.centering{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    text-align: center;
+}
+
